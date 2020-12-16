@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center"
+    tools:context=".activity.ScrachCardActivity">
+
+    <com.cooltechworks.views.ScratchImageView
+        android:layout_marginBottom="25dp"
+        android:id="@+id/sample_image"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@android:color/white"
+        android:src="@drawable/splash_logo"
+        />
+
+
+    <com.cooltechworks.views.ScratchTextView
+        android:id="@+id/simple_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center|end"
+        android:textColor="@color/colorAccent"
+        android:text="xxxxxxxx"
+        android:textSize="25sp"
+        android:textStyle="bold" />
+</LinearLayout>

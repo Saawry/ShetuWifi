@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activity.MainActivity">
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/fragment_container"/>
+
+    <com.ismaeldivita.chipnavigation.ChipNavigationBar
+        app:cnb_orientationMode="horizontal"
+        android:id="@+id/my_chip_bottom_nav"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:elevation="18dp"
+        android:padding="8dp"
+        app:cnb_iconTintMode="src_atop"
+        android:layout_alignParentBottom="true"
+        android:background="@drawable/chip_nav_backgrund"
+        app:cnb_menuResource="@menu/bottom_menu" />
+    <!--        app:cnb_orientationMode="vertical"  -->
+
+
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        app:backgroundTint="@color/lgBlue"
+        android:id="@+id/fabx"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/ic_baseline_architecture_24"
+        android:contentDescription="View"
+        android:layout_marginEnd="25dp"
+        android:layout_marginBottom="85dp"
+        />
+
+</RelativeLayout>

@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <item
+        app:cnb_backgroundColor="@color/green"
+        android:id="@+id/buy_package_menu"
+        android:icon="@drawable/package_buy_icon"
+        android:title="Buy Package" />
+    <item
+        app:cnb_backgroundColor="@color/green"
+        android:id="@+id/dashboard_menu"
+        android:icon="@drawable/ic_baseline_settings_power_24"
+        android:title="Dashboard"
+        />
+    <item
+        app:cnb_backgroundColor="@color/green"
+        android:id="@+id/my_package_menu"
+        android:icon="@drawable/package_delivery_icon_png"
+        android:title="My Package" />
+
+</menu>

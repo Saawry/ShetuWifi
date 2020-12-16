@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:elevation="5dp"
+    android:padding="20dp"
+    android:layout_margin="5dp"
+    android:layout_gravity="center"
+    android:background="@drawable/pkg_details_white_card"
+    android:orientation="vertical">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="2dp"
+        android:layout_marginLeft="5dp"
+        android:text="Confirm Your Purchase"
+        android:textStyle="bold"
+        android:textAllCaps="false"
+        android:textColor="@color/black"
+        android:textSize="18sp" />
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/purchase_alert_pkg_name"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="5dp"
+                android:text="Package Name"
+                android:textStyle="bold"
+                android:textAllCaps="false"
+                android:textColor="@color/black"
+                android:textSize="16sp" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="2dp"
+                android:text="-Unlimited Internet"
+                android:textAllCaps="false"
+                android:textColor="@color/black"
+                android:textSize="15sp" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:gravity="right"
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <TextView
+                android:layout_marginRight="5dp"
+                android:textStyle="bold"
+                android:id="@+id/purchase_alert_pkg_price"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="2dp"
+                android:text="Price"
+                android:layout_marginTop="20dp"
+                android:textAllCaps="false"
+                android:textColor="#4359A9"
+                android:textSize="18sp" />
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/purchase_alert_pkg_validity"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="2dp"
+        android:layout_marginLeft="5dp"
+        android:text="-Validity: 00 days"
+        android:textAllCaps="false"
+        android:textColor="@color/black"
+        android:textSize="15sp" />
+
+    <ImageView
+        android:id="@+id/hl_1"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:src="@drawable/horizontal_line_3"/>
+    <Switch
+        android:track="@drawable/swch_track_1"
+        android:thumb="@drawable/swch_thumb_1"
+        android:textOn="On"
+        android:textOff="Off"
+        android:showText="true"
+        android:layout_margin="7dp"
+        android:id="@+id/purchase_alert_renew_switch"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Auto renew"
+        android:textColor="@color/black"
+        android:textSize="16dp" />
+<!--    <Switch-->
+<!--        android:track="@drawable/switch_draw"-->
+<!--        android:layout_margin="7dp"-->
+<!--        android:id="@+id/purchase_alert_renew_swtch"-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:text="Auto renew"-->
+<!--        android:paddingTop="3dp"-->
+<!--        android:textColor="@color/black"-->
+<!--        android:textSize="17dp" />-->
+
+    <Button
+        android:textColor="@color/white"
+        android:id="@+id/purchase_alert_purchase_btn"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="20dp"
+        android:layout_marginBottom="20dp"
+        android:background="@drawable/btn_blue_fill_back"
+        android:text="@string/pkg_buy_btn_str"
+        android:textAlignment="center"
+        android:textAllCaps="false"
+        android:textSize="16sp" />
+</LinearLayout>

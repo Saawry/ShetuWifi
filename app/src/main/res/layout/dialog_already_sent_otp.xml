@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:layout_margin="5dp"
+    android:layout_gravity="center"
+    android:padding="10dp"
+    android:background="@drawable/pkg_details_white_card">
+
+    <ImageView
+        android:id="@+id/purchase_success_status_image"
+        android:layout_marginTop="5dp"
+        android:layout_marginBottom="5dp"
+        android:layout_gravity="center"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/error_sign"/>
+    <TextView
+        android:layout_gravity="center"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="2dp"
+        android:layout_marginLeft="5dp"
+        android:text=" OTP sent already, Try after 5 minutes."
+        android:textAllCaps="false"
+        android:textColor="@color/black"
+        android:textSize="17sp" />
+    <TextView
+        android:layout_gravity="center"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="2dp"
+        android:layout_marginLeft="5dp"
+        android:text="or"
+        android:textAllCaps="false"
+        android:textColor="@color/black"
+        android:textSize="15sp" />
+
+    <TextView
+        android:layout_gravity="center"
+        android:id="@+id/success_tv2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="2dp"
+        android:layout_marginLeft="5dp"
+        android:text="Already have an OTP"
+        android:textAllCaps="false"
+        android:textColor="@color/black"
+        android:textSize="17sp" />
+
+    <Button
+        android:textColor="@color/white"
+        android:id="@+id/verify_existing_otp_btn"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="20dp"
+        android:layout_marginBottom="20dp"
+        android:background="@drawable/btn_blue_fill_back"
+        android:text="Verify"
+        android:textAlignment="center"
+        android:textAllCaps="false"
+        android:textSize="16sp" />
+</LinearLayout>

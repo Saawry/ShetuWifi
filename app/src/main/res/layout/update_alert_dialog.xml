@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:padding="20dp"
+    android:layout_gravity="center_horizontal"
+    android:background="@drawable/pkg_details_white_card"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    tools:context=".activity.AlertDialogActivity">
+
+    <TextView
+        android:textColor="@color/deepBlue"
+        android:textAlignment="center"
+        android:textSize="13dp"
+        android:id="@+id/alert_title_tv"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Update Version"/>
+
+    <TextView
+        android:textColor="@color/colorAccent"
+        android:layout_marginTop="25dp"
+        android:layout_marginBottom="25dp"
+        android:textSize="18dp"
+        android:layout_gravity="center"
+        android:id="@+id/alert_description_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="A New Version is Available" />
+    <LinearLayout
+        android:gravity="center"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <Button
+            android:background="@drawable/btn_fill_back"
+            android:textColor="@color/white"
+            android:layout_marginRight="20dp"
+            android:textSize="10dp"
+            android:id="@+id/alert_negative_btn"
+            android:layout_width="70dp"
+            android:layout_height="30dp"
+            android:text="Later" />
+
+        <Button
+            android:background="@drawable/btn_fill_back"
+            android:textColor="@color/white"
+            android:layout_marginLeft="20dp"
+            android:textSize="10dp"
+            android:id="@+id/alert_positive_btn"
+            android:layout_width="70dp"
+            android:layout_height="30dp"
+            android:text="Update" />
+
+    </LinearLayout>
+
+</LinearLayout>

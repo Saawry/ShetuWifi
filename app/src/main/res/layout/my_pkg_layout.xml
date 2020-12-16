@@ -1,0 +1,161 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_marginBottom="15dp"
+    android:layout_marginLeft="5dp"
+    android:layout_marginRight="5dp"
+    android:padding="20dp"
+    android:elevation="5dp"
+    android:background="@drawable/pkg_details_white_card"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/pkg_card_pkg_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="5dp"
+                android:text="Package Name"
+                android:textStyle="bold"
+                android:textAllCaps="false"
+                android:textColor="@color/black"
+                android:textSize="22sp" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="2dp"
+                android:text="-Unlimited Internet"
+                android:textAllCaps="false"
+                android:textColor="@color/black"
+                android:textSize="18sp" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:gravity="right"
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <TextView
+                android:layout_marginRight="5dp"
+                android:textStyle="bold"
+                android:id="@+id/pkg_card_pkg_price"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="2dp"
+                android:text="Price"
+                android:textAllCaps="false"
+                android:textColor="#4359A9"
+                android:textSize="22sp" />
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/pkg_card_pkg_validity"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="2dp"
+        android:layout_marginLeft="5dp"
+        android:text="-Validity: 00 days"
+        android:textAllCaps="false"
+        android:textColor="@color/black"
+        android:textSize="18sp" />
+
+    <ImageView
+        android:id="@+id/hl_1"
+        android:visibility="gone"
+        android:layout_marginTop="20dp"
+        android:layout_marginBottom="20dp"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:src="@drawable/horizontal_line_3"/>
+    <TextView
+        android:visibility="gone"
+        android:id="@+id/pkg_card_created_at_tv"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="2dp"
+        android:layout_marginLeft="5dp"
+        android:text="Created at:"
+        android:textColor="@color/black"
+        android:textSize="18sp" />
+
+    <TextView
+        android:visibility="gone"
+        android:id="@+id/pkg_card_expires_at_tv"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="2dp"
+        android:layout_marginLeft="5dp"
+        android:text="Valid till:"
+        android:textColor="@color/black"
+        android:textSize="18sp" />
+    <ImageView
+        android:id="@+id/hl_2"
+        android:visibility="gone"
+        android:layout_marginTop="20dp"
+        android:layout_marginBottom="20dp"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:src="@drawable/horizontal_line_3"/>
+    <Switch
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        android:track="@drawable/swch_track_1"
+        android:thumb="@drawable/swch_thumb_1"
+        android:textOn="On"
+        android:textOff="Off"
+        android:showText="true"
+        android:layout_margin="7dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:id="@+id/pkg_renew_switch"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/auto_renew_str"
+        android:textColor="@color/black"
+        android:textSize="16dp" />
+<!--    <Switch-->
+<!--        android:visibility="gone"-->
+<!--        android:track="@drawable/switch_draw"-->
+<!--        android:layout_margin="7dp"-->
+<!--        android:id="@+id/pkg_renew_switch"-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:text="Auto renew"-->
+<!--        android:paddingTop="3dp"-->
+<!--        android:textColor="@color/black"-->
+<!--        android:textSize="20dp" />-->
+
+    <Button
+        android:textColor="#2196F3"
+        android:id="@+id/pkg_card_buy_btn"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="20dp"
+        android:layout_marginBottom="20dp"
+        android:background="@drawable/btn_back_border"
+        android:text="Buy This Package"
+        android:textAlignment="center"
+        android:textAllCaps="false"
+        android:textSize="18sp" />
+</LinearLayout>

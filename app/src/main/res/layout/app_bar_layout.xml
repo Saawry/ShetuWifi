@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<androidx.appcompat.widget.Toolbar
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:id="@+id/toolbar_layout"
+    android:layout_height="?attr/actionBarSize"
+    android:gravity="center_vertical"
+    android:background="@color/white"
+    android:elevation="3dp"
+    android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar">
+
+    <ImageView
+        android:id="@+id/toolbar_arrow_icon"
+        android:layout_width="24dp"
+        android:layout_height="24dp"
+        android:src="@drawable/ic_arrow_back_24"
+        tools:layout_editor_absoluteX="0dp"
+        tools:ignore="MissingConstraints" />
+
+<!--        <de.hdodenhof.circleimageview.CircleImageView-->
+<!--            android:visibility="gone"-->
+<!--            xmlns:app="http://schemas.android.com/apk/res-auto"-->
+<!--            android:id="@+id/logo_image"-->
+<!--            android:layout_width="50dp"-->
+<!--            android:layout_height="50dp"-->
+<!--            android:src="@drawable/splash_logo"-->
+<!--            app:civ_border_width="2dp"-->
+<!--            app:civ_border_color="#FF000000"-->
+<!--            tools:ignore="MissingConstraints" />-->
+
+        <TextView
+            android:id="@+id/app_toolbar_title"
+            android:layout_width="wrap_content"
+            android:layout_height="26dp"
+            android:layout_marginStart="25dp"
+            android:layout_marginTop="15dp"
+            android:layout_marginEnd="102dp"
+            android:text="@string/verify_toolbar_title"
+            android:textAllCaps="false"
+            android:textColor="@color/black"
+            android:textSize="19dp"
+             />
+
+<!--        <ImageView-->
+<!--            android:id="@+id/toolbar_network_status_icon"-->
+<!--            android:layout_width="25dp"-->
+<!--            android:layout_height="25dp"-->
+<!--            android:layout_marginTop="16dp"-->
+<!--            android:src="@drawable/signal_0"-->
+<!--            app:layout_constraintTop_toTopOf="parent"-->
+<!--            tools:layout_editor_absoluteX="343dp"-->
+<!--            tools:ignore="MissingConstraints" />-->
+
+
+</androidx.appcompat.widget.Toolbar>

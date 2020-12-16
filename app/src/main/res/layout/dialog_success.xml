@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:padding="10dp"
+    android:layout_margin="5dp"
+    android:layout_gravity="center"
+    android:background="@drawable/pkg_details_white_card">
+
+    <ImageView
+        android:id="@+id/purchase_success_status_image"
+        android:layout_marginTop="5dp"
+        android:layout_marginBottom="5dp"
+        android:layout_gravity="center"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/success_oval"/>
+    <TextView
+        android:id="@+id/success_tv1"
+        android:layout_gravity="center"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="2dp"
+        android:layout_marginLeft="5dp"
+        android:text="@string/pkg_buy_success"
+        android:textAllCaps="false"
+        android:textColor="@color/black"
+        android:textSize="18sp" />
+    <TextView
+        android:visibility="gone"
+        android:layout_gravity="center"
+        android:id="@+id/success_tv2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="2dp"
+        android:layout_marginLeft="5dp"
+        android:text="@string/try_again_text"
+        android:textAllCaps="false"
+        android:textColor="@color/black"
+        android:textSize="15sp" />
+
+    <Button
+        android:textColor="@color/white"
+        android:id="@+id/purchase_success_home_btn"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="20dp"
+        android:layout_marginBottom="20dp"
+        android:background="@drawable/btn_blue_fill_back"
+        android:text="Back to home "
+        android:textAlignment="center"
+        android:textAllCaps="false"
+        android:textSize="16sp" />
+</LinearLayout>

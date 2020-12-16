@@ -1,0 +1,79 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <!--    <style name="AppTheme" parent="Theme.AppCompat.Light.NoActionBar">-->
+    <!--        &lt;!&ndash; Customize your theme here. &ndash;&gt;-->
+    <!--        <item name="colorPrimary">@color/colorPrimary</item>-->
+    <!--        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>-->
+    <!--        <item name="colorAccent">@color/colorAccent</item>-->
+    <!--    </style>-->
+
+    <!-- Base application theme. -->
+        <style name="AppThemeLight" parent="Theme.AppCompat.Light">
+            <!-- Customize your theme here. -->
+            <item name="android:windowLightStatusBar">true</item>
+            <item name="colorPrimary">@color/white</item>
+            <item name="colorPrimaryDark">@color/deep_grey</item>
+
+            <item name="colorAccent">@color/colorAccent</item>
+        </style>
+
+    <style name="AppTheme.Dark" parent="Theme.AppCompat.NoActionBar">
+<!--        <item name="colorPrimary">@color/lgBlue</item>-->
+<!--        <item name="colorPrimaryDark">@color/lgBlue</item>-->
+
+        <item name="android:windowLightStatusBar">true</item>
+        <item name="colorPrimary">@color/deepBlue</item>
+        <item name="colorPrimaryDark">@color/light_grey</item>
+        <item name="colorAccent">@color/white</item>
+
+        <item name="android:windowBackground">@color/silver</item>
+
+
+        <item name="colorControlNormal">@color/Purple</item>
+        <item name="colorControlActivated">@color/colorAccent</item>
+        <item name="colorControlHighlight">@color/green</item>
+        <item name="android:textColorHint">@color/Primary</item>
+
+        <item name="colorButtonNormal">@color/colorAccent</item>
+        <!--        <item name="android:colorButtonNormal">@color/primary_darker</item>-->
+    </style>
+
+    <style name="AppTheme.Dark.Dialog" parent="Theme.AppCompat.Dialog">
+        <item name="colorAccent">@color/white</item>
+        <item name="android:textColorPrimary">@color/Purple</item>
+        <item name="android:background">@color/colorAccent</item>
+    </style>
+
+
+
+    <style name="DialogTheme" parent="android:Theme.Dialog">
+
+        <item name="android:layout_width">fill_parent</item>
+        <item name="android:layout_height">match_parent</item>
+        <!-- No titles or window float -->
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowIsFloating">false</item>
+    </style>
+
+
+    <style name="AppTheme.Dark.NoActionBar">
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+    </style>
+    <style name="datepicker" parent="Theme.AppCompat.Light.Dialog">
+        <item name="colorPrimary">@color/white</item>
+        <item name="colorPrimaryDark">@color/black</item>
+        <item name="colorAccent">@color/colorAccent</item>
+    </style>
+<!--    <style name="MySwitch" parent="@style/Widget.AppCompat.CompoundButton.Switch">-->
+<!--        <item name="android:textColorPrimaryDisableOnly">#b71c1c</item>-->
+<!--        <item name="android:colorControlActivated">#1b5e20</item>-->
+<!--        <item name="android:colorForeground">@color/light_grey</item>-->
+<!--        <item name="android:textAppearance">@style/TextAppearance.AppCompat</item>-->
+<!--    </style>-->
+
+    <style name="AppTheme.Dark.AppBarOverlay" parent="ThemeOverlay.AppCompat.Dark.ActionBar" />
+    <style name="AppTheme.Dark.PopupOverlay" parent="ThemeOverlay.AppCompat.Light" />
+</resources>

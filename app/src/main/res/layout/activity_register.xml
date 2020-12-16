@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/white"
+    tools:context=".activity.RegisterActivity">
+
+    <include
+        android:id="@+id/reg_toolbar"
+        layout="@layout/app_bar_layout" />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:gravity="center">
+
+        <TextView
+            android:layout_marginTop="5dp"
+            android:layout_gravity="left"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/enter_name_str"
+            android:textColor="@color/black"
+            android:textSize="12sp"
+            android:padding="5dp"/>
+        <EditText
+            android:layout_marginTop="15dp"
+            android:textSize="18sp"
+            android:textColor="@color/black"
+            android:padding="5dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Cristiano Messi"
+            android:textColorHint="@color/silver"
+            android:id="@+id/reg_name_et"/>
+        <TextView
+            android:layout_gravity="left"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="তারিখ:"
+            android:textColor="@color/black"
+            android:textSize="12sp"
+            android:padding="5dp"/>
+        <TextView
+            android:layout_marginTop="5dp"
+            android:id="@+id/reg_dobrth_tv"
+            android:layout_gravity="left"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:hint="00.00.0000"
+            android:textColorHint="@color/silver"
+            android:textColor="@color/black"
+            android:textSize="18sp"
+            android:padding="5dp"/>
+
+
+        <Button
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+            android:layout_marginTop="25dp"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:text="Update info"
+            android:textAllCaps="false"
+            android:textAlignment="center"
+            android:textColor="@color/black"
+            android:background="@drawable/btn_blue_fill_back"
+            android:id="@+id/reg_register_btn" />
+    </LinearLayout>
+    <!--    <ImageView-->
+    <!--        android:layout_marginTop="15dp"-->
+    <!--        android:layout_marginBottom="15dp"-->
+    <!--        android:layout_width="match_parent"-->
+    <!--        android:layout_height="wrap_content"-->
+    <!--        android:layout_gravity="center"-->
+    <!--        android:src="@drawable/splash_logo" />-->
+
+
+
+</LinearLayout>

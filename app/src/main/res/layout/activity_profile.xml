@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center"
+    android:background="@drawable/pkg_details_white_card"
+    tools:context=".activity.ProfileActivity">
+
+
+    <com.cooltechworks.views.ScratchImageView
+        android:id="@+id/sample_image2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@android:color/white"
+        android:src="@drawable/splash_logo"
+        />
+
+
+    <LinearLayout
+        android:background="@drawable/pkg_details_white_card"
+        android:layout_marginTop="20dp"
+        android:padding="5dp"
+        android:layout_gravity="center"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:textColor="@color/black"
+            android:id="@+id/pro_name_tv"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="2dp"
+            android:textSize="19sp"
+            android:textAlignment="center"
+            android:textAllCaps="false"
+            android:text="Name" />
+
+        <TextView
+            android:textColor="@color/black"
+            android:id="@+id/pro_mobile_tv"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="2dp"
+            android:textSize="17sp"
+            android:textAlignment="center"
+            android:textAllCaps="false"
+            android:text="Mobile" />
+
+        <TextView
+            android:textColor="@color/black"
+            android:id="@+id/pro_balance_tv"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="2dp"
+            android:textSize="17sp"
+            android:textAlignment="center"
+            android:textAllCaps="false"
+            android:text="@string/bdt_symbol" />
+        <TextView
+            android:textColor="@color/black"
+            android:id="@+id/pro_dob_tv"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="2dp"
+            android:textSize="17sp"
+            android:textAlignment="center"
+            android:textAllCaps="false"
+            android:text="@string/bdt_symbol" />
+
+        <TextView
+            android:textColor="@color/black"
+            android:id="@+id/pro_pkg_cntr_tv"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="2dp"
+            android:textSize="17sp"
+            android:textAlignment="center"
+            android:textAllCaps="false"
+            android:text="Packages" />
+    </LinearLayout>
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Logout"
+        android:textSize="20sp"
+        android:textAllCaps="false"
+        android:layout_margin="5dp"
+        android:padding="5dp"
+        android:id="@+id/prof_logout_btn" />
+</LinearLayout>

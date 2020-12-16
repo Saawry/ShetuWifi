@@ -1,0 +1,197 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/home_frg_container"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingRight="12dp"
+    android:paddingLeft="12dp"
+    android:paddingBottom="15dp"
+    android:paddingTop="15dp"
+    android:orientation="vertical"
+    tools:context=".fragments.home.HomeFragment">
+
+
+
+    <LinearLayout
+        android:background="@drawable/pkg_details_white_card"
+        android:paddingTop="20dp"
+        android:paddingBottom="20dp"
+        android:paddingLeft="5dp"
+        android:paddingRight="5dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="5dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:textColor="#515357"
+                android:alpha="0.7"
+                android:textAllCaps="false"
+                android:textAlignment="center"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/current_balance_str"
+                android:textSize="12sp" />
+
+            <TextView
+                android:id="@+id/home_fragment_balance_tv"
+                android:textColor="#4A4A4A"
+                android:textAllCaps="false"
+                android:textAlignment="center"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="999.00"
+                android:textSize="24sp" />
+
+            <TextView
+                android:id="@+id/home_frag_buy_pkg_lnk"
+                android:textColor="#2378D4"
+                android:layout_marginTop="15dp"
+                android:textAllCaps="false"
+                android:textAlignment="center"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:onClick="ShowBuyPkgFrg"
+                android:text="Profile"
+                android:textSize="12sp"
+                tools:ignore="OnClick" />
+        </LinearLayout>
+
+        <ImageView
+            android:layout_marginRight="10dp"
+            android:layout_marginLeft="5dp"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:src="@drawable/vertical_long_line" />
+<!--        <View-->
+<!--            android:layout_marginRight="15dp"-->
+<!--            android:layout_marginLeft="15dp"-->
+<!--            android:layout_width="4px"-->
+<!--            android:layout_height="150dp"/>-->
+
+
+        <LinearLayout
+
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:textColor="#515357"
+                android:textAllCaps="false"
+                android:textAlignment="center"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/current_balance_str"
+                android:textSize="11sp" />
+
+            <TextView
+                android:id="@+id/home_fragment_pkg_name_tv"
+                android:textColor="#383D46"
+                android:layout_marginTop="3dp"
+                android:textAllCaps="false"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Basic Daily Package "
+                android:textSize="14sp" />
+
+            <TextView
+                android:textColor="#515357"
+                android:textAllCaps="false"
+                android:textAlignment="center"
+                android:layout_marginTop="16dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/expiry_date_str"
+                android:textSize="11sp" />
+
+            <TextView
+                android:id="@+id/home_fragment_validity_tv"
+                android:textColor="#383D46"
+                android:textAllCaps="false"
+                android:textAlignment="center"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="00 XXX 20, 00.00pm"
+                android:textSize="14sp" />
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:paddingTop="20dp"
+        android:paddingBottom="20dp"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/pkg_details_white_card"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/frg_home_area_coverage_tv"
+            android:textColor="@color/colorAccent"
+            android:layout_marginTop="20dp"
+            android:layout_gravity="center"
+            android:textAllCaps="false"
+            android:textAlignment="center"
+            android:paddingLeft="7dp"
+            android:paddingRight="7dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/contact_with_shet_agent_str"
+            android:textSize="12sp" />
+
+        <TextView
+            android:id="@+id/frg_home_area_coverage_tv2"
+            android:textColor="#515357"
+            android:layout_gravity="center"
+            android:layout_marginBottom="20dp"
+            android:textAllCaps="false"
+            android:textAlignment="center"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text=""
+            android:textSize="12sp" />
+
+        <ImageView
+            android:id="@+id/connect_image_btn"
+            android:layout_width="220dp"
+            android:layout_height="220dp"
+            android:src="@drawable/disconnected_img"
+            android:layout_gravity="center">
+        </ImageView>
+
+
+<!--        <ImageView-->
+<!--            -->
+<!--            android:layout_width="250dp"-->
+<!--            android:layout_height="250dp"-->
+<!--            android:src="@drawable/connect_btn_icon"-->
+<!--            android:layout_gravity="center_horizontal">-->
+<!--        </ImageView>-->
+
+        <Button
+            android:layout_gravity="center"
+            android:layout_marginTop="20dp"
+            android:layout_marginBottom="20dp"
+            android:layout_width="250dp"
+            android:layout_height="50dp"
+            android:text="@string/connect_btn_str"
+            android:textColor="@color/lgBlue"
+            android:textAllCaps="false"
+            android:textSize="18sp"
+            android:textAlignment="center"
+            android:background="@drawable/btn_back_border"
+            android:id="@+id/home_fragment_connectivity_btn" />
+    </LinearLayout>
+
+</LinearLayout>

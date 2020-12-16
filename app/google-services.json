@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "1079939960461",
+    "firebase_url": "https://shetu-a91bb.firebaseio.com",
+    "project_id": "shetu-a91bb",
+    "storage_bucket": "shetu-a91bb.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1079939960461:android:e940e09a6185250e9edcc4",
+        "android_client_info": {
+          "package_name": "com.example.shetu"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "1079939960461-mq8836sk1f8fqle1huqi7p6al4ptn0po.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDerFBUUpfX5ZYkAGuDSMZPMLdzKrBU324"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "1079939960461-mq8836sk1f8fqle1huqi7p6al4ptn0po.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".activity.PhoneVerifyActivity">
+    <include
+        android:id="@+id/phn_verify_toolbar"
+        layout="@layout/app_bar_layout"
+        ></include>
+    <ImageView
+        android:layout_marginTop="15dp"
+        android:layout_marginBottom="15dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:src="@drawable/splash_logo"></ImageView>
+    <EditText
+        android:layout_margin="5dp"
+        android:padding="5dp"
+        android:layout_width="match_parent"
+        android:layout_height="35dp"
+        android:hint="Enter OTP"
+        android:inputType="number"
+        android:textColorHint="@color/light_grey"
+        android:textAlignment="center"
+        android:id="@+id/verify_phn_otp_et">
+    </EditText>
+
+    <Button
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:layout_marginTop="25dp"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:text="Verify"
+        android:textAllCaps="false"
+        android:textAlignment="center"
+        android:background="@drawable/btn_back_border"
+        android:id="@+id/verify_phn_verify_btn"></Button>
+
+    <TextView
+        android:layout_margin="5dp"
+        android:padding="5dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="token"
+        android:visibility="invisible"
+        android:textColorHint="@color/light_grey"
+        android:textAlignment="center"
+        android:id="@+id/verify_phn_token">
+    </TextView>
+</LinearLayout>

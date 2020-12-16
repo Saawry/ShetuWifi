@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:paddingRight="12dp"
+    android:paddingLeft="12dp"
+    android:paddingBottom="15dp"
+    android:paddingTop="15dp"
+    android:elevation="5dp"
+    tools:context=".fragments.MyPackagesFragment">
+    <LinearLayout
+        android:padding="10dp"
+        android:gravity="center"
+        android:layout_marginBottom="15dp"
+        android:background="@drawable/pkg_details_white_card"
+        android:layout_gravity="center_vertical"
+        android:layout_marginLeft="5dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <TextView
+            android:textColor="#515357"
+            android:alpha="0.7"
+            android:textAllCaps="false"
+            android:textAlignment="center"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/current_balance_str"
+            android:textSize="12sp" />
+
+        <TextView
+            android:id="@+id/home_fragment_balance_tv"
+            android:textColor="#4A4A4A"
+            android:textAllCaps="false"
+            android:textAlignment="center"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="999.00"
+            android:textSize="24sp" />
+
+        <TextView
+            android:id="@+id/home_frag_buy_pkg_lnk"
+            android:textColor="#2378D4"
+            android:layout_marginTop="15dp"
+            android:textAllCaps="false"
+            android:textAlignment="center"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="ShowBuyPkgFrg"
+            android:text="@string/recharge_to_use_str"
+            android:textSize="12sp"
+            tools:ignore="OnClick" />
+    </LinearLayout>
+<androidx.recyclerview.widget.RecyclerView
+    android:id="@+id/my_pkg_recycler"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+</androidx.recyclerview.widget.RecyclerView>
+</LinearLayout>
